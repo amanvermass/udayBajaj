@@ -107,27 +107,27 @@ color: #fff;
 
 }
 
-.GalleryImagesContainer.active, .GalleryVideoContainer.active {
+ .GalleryVideoContainer.active {
     display: grid;
 }
 
 /* For large tablets and smaller desktops */
 @media (max-width: 1200px) {
-    .GalleryImagesContainer, .GalleryVideoContainer {
+     .GalleryVideoContainer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* For medium tablets */
 @media (max-width: 900px) {
-    .GalleryImagesContainer, .GalleryVideoContainer {
+     .GalleryVideoContainer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* For mobile */
 @media (max-width: 600px) {
-    .GalleryImagesContainer, .GalleryVideoContainer {
+     .GalleryVideoContainer {
         grid-template-columns: 1fr;
         max-width: 400px;
         margin-left: auto;
@@ -151,6 +151,13 @@ color: #fff;
     border-radius: 8px;
 }
 
+.GalleryImagesContainer.active{
+    display: flex;
+    width: 55vw;
+    margin: 0 auto;
+    margin-top: 40px;
+    justify-content: center;
+}
 
 .GalleryMostOuter{
     display: flex;
@@ -176,20 +183,17 @@ color: #fff;
     margin: 0 auto;
 }
 
+
 @media (max-width: 1200px) {
     .GalleryMostOuter{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: 5%;
+    /* margin-left: 5%; */
 }
 }
 
 @media (max-width: 680px) {
-
-    .GalleryMostOuter{
-    margin-left: 5%;
-}
 
 .GalleryOuter{
     display: flex;
@@ -199,12 +203,6 @@ color: #fff;
         
 }
 }
-/* 
-@media (max-width: 680px) {
 
-    .GalleryMostOuter{
-    margin-left: 3%;
-}
-} */
 
 

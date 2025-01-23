@@ -57,7 +57,7 @@ a{
   }
   
   .Img {
-    height: 92px;
+    height: clamp(40px, 10vw, 92px);
     width: auto; 
   }
   
@@ -75,10 +75,12 @@ a{
 .footer_div {
     display: flex;
     width: 90%;
-    max-width: 1400px;
     justify-content: space-between;
+    align-items: center;
     gap: 40px;
     flex-wrap: wrap;
+    margin-top: 90px;
+    
 }
 
 .social_icon {
