@@ -94,7 +94,11 @@ color: #fff;
     margin-top: 10px;
 }
 
-.GalleryImagesContainer, .GalleryVideoContainer {
+.GalleryImagesContainer{
+    display: none;
+    margin-top: 40px;
+}
+ .GalleryVideoContainer {
     display: none;
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
@@ -103,27 +107,27 @@ color: #fff;
 
 }
 
-.GalleryImagesContainer.active, .GalleryVideoContainer.active {
+ .GalleryVideoContainer.active {
     display: grid;
 }
 
 /* For large tablets and smaller desktops */
 @media (max-width: 1200px) {
-    .GalleryImagesContainer, .GalleryVideoContainer {
+    .GalleryVideoContainer {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 /* For medium tablets */
 @media (max-width: 900px) {
-    .GalleryImagesContainer, .GalleryVideoContainer {
+     .GalleryVideoContainer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 /* For mobile */
 @media (max-width: 600px) {
-    .GalleryImagesContainer, .GalleryVideoContainer {
+     .GalleryVideoContainer {
         grid-template-columns: 1fr;
         max-width: 400px;
         margin-left: auto;
@@ -131,11 +135,7 @@ color: #fff;
     }
 }
 
-.GalleryImage {
-    aspect-ratio: 1/1;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
-}
+
 
 .GalleryVideo {
     aspect-ratio: 16/9;
@@ -150,3 +150,73 @@ color: #fff;
     object-fit: cover;
     border-radius: 8px;
 }
+
+.GalleryImagesContainer.active{
+    display: flex;
+    width: 60vw;
+    
+}
+
+
+.GalleryMostOuter{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 80vw;
+    
+}
+
+.GalleryOuter{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin: 0 auto;
+        
+}
+
+.GalleryInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+    .GalleryMostOuter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+
+}
+
+@media (max-width: 680px) {
+
+    .GalleryImagesContainer{
+        margin-left: 40%;
+    }
+
+    .GalleryMostOuter{
+    margin-left: 5%;
+}
+
+.GalleryOuter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:20px;
+        
+}
+}
+/* 
+@media (max-width: 680px) {
+
+    .GalleryMostOuter{
+    margin-left: 3%;
+}
+} */
+
+

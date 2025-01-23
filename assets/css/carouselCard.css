@@ -15,12 +15,13 @@ body {
     justify-content: center;
     padding: 40px 0;
     position: relative;
+    overflow: hidden;
 }
 
 .CarouselCardWrapper {
     width: 90%;
-    /* max-width: 1400px; */
     position: relative;
+    overflow: hidden;
 }
 
 .CarouselCardsTitleColoured {
@@ -37,11 +38,17 @@ body {
 
 /* Splide Styles */
 .splide {
-    padding: 0 50px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .splide__track {
-    overflow: visible;
+    overflow: hidden;
+}
+
+.splide__list {
+    margin: 0 !important;
 }
 
 .splide__arrow {
@@ -49,6 +56,10 @@ body {
     height: 50px !important;
     background: #3C3C3C !important;
     opacity: 1 !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
 }
 
 .splide__arrow svg {
@@ -70,11 +81,11 @@ body {
 }
 
 .splide__arrow--prev {
-    /* left: -60px !important; */
+    left: 0 !important;
 }
 
 .splide__arrow--next {
-    /* right: -60px !important; */
+    right: 0 !important;
 }
 
 /* Card Styles */
@@ -87,7 +98,6 @@ body {
     border-radius: 12px;
     background: #fff;
     width: 303px !important;
-    flex-shrink: 0;
 }
 
 .CarouselCardImg {
@@ -114,6 +124,7 @@ body {
     color: #DA2725;
     font-size: 20px;
     font-weight: 700;
+    text-wrap: nowrap;
 }
 
 .rupeeSymbol {
@@ -145,39 +156,39 @@ body {
 }
 
 @media (max-width: 1024px) {
-    .splide {
-        padding: 0 40px;
-    }
-
     .splide__arrow--prev {
-        left: -50px !important;
+        left: 0 !important;
     }
 
     .splide__arrow--next {
-        right: -50px !important;
+        right: 0 !important;
     }
 }
 
 @media (max-width: 768px) {
-    .splide {
-        padding: 0 30px;
-    }
-
     .splide__arrow {
-        width: 40px !important;
-        height: 40px !important;
+        width: 25px !important;
+        height: 25px !important;
     }
 
     .splide__arrow i {
-        font-size: 20px;
+        font-size: 10px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
+    .splide__arrow img{
+        width: 80%;
+
+    }
     .splide__arrow--prev {
-        left: -40px !important;
+        left: 0px !important;
     }
 
     .splide__arrow--next {
-        right: -40px !important;
+        right: 0px !important;
     }
 
     .CarouselCard {
@@ -211,5 +222,23 @@ body {
     
     .CarouselCard {
         padding: 10px 15px;
+    }
+}
+
+@media (max-width: 400px){
+    .CarouselCardImg {
+        width: 75vw;
+        height: 217px;
+        object-fit: contain;
+    }
+    .CarouselCard {
+        border: 1px solid #C9C9C9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 8px;
+        border-radius: 12px;
+        background: #fff;
+        /* width: 80vw !important; */
     }
 }

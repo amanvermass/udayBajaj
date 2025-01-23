@@ -1,4 +1,3 @@
-//here
 document.addEventListener('DOMContentLoaded', () => {
     const faqWrappers = document.querySelectorAll('.faqWrapper');
     
