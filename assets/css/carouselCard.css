@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.CarouselCardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    position: relative;
+}
+
+.CarouselCardWrapper {
+    width: 90%;
+    /* max-width: 1400px; */
+    position: relative;
+}
+
+.CarouselCardsTitleColoured {
+    font-size: 46px;
+    font-weight: 600;
+    text-align: center;
+    color: #DA2725;
+    margin-bottom: 49px;
+}
+
+.CarouselCardsTitle {
+    color: #000;
+}
+
+/* Splide Styles */
+.splide {
+    padding: 0 50px;
+}
+
+.splide__track {
+    overflow: visible;
+}
+
+.splide__arrow {
+    width: 50px !important;
+    height: 50px !important;
+    background: #3C3C3C !important;
+    opacity: 1 !important;
+}
+
+.splide__arrow svg {
+    display: none;
+}
+
+.splide__arrow i {
+    color: white;
+    font-size: 25px;
+}
+
+.splide__arrow:hover {
+    /* background: #DA2725 !important; */
+}
+
+.splide__arrow:disabled {
+    opacity: 0.5 !important;
+    background: #3C3C3C !important;
+}
+
+.splide__arrow--prev {
+    /* left: -60px !important; */
+}
+
+.splide__arrow--next {
+    /* right: -60px !important; */
+}
+
+/* Card Styles */
+.CarouselCard {
+    border: 1px solid #C9C9C9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 28px;
+    border-radius: 12px;
+    background: #fff;
+    width: 303px !important;
+    flex-shrink: 0;
+}
+
+.CarouselCardImg {
+    width: 303px;
+    height: 217px;
+    object-fit: contain;
+}
+
+.CarouselNamePrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 12px;
+}
+
+.CarouselVehicleName{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.price {
+    color: #DA2725;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.rupeeSymbol {
+    font-family: "Roboto";
+}
+
+.CarouselDetailContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.CarouselDetailWrapper{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.CarouselVehicleType{
+    color: #606060;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.CarouselLine{
+    height: 17px;
+    border: 1px solid #999999;
+}
+
+@media (max-width: 1024px) {
+    .splide {
+        padding: 0 40px;
+    }
+
+    .splide__arrow--prev {
+        left: -50px !important;
+    }
+
+    .splide__arrow--next {
+        right: -50px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .splide {
+        padding: 0 30px;
+    }
+
+    .splide__arrow {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .splide__arrow i {
+        font-size: 20px;
+    }
+
+    .splide__arrow--prev {
+        left: -40px !important;
+    }
+
+    .splide__arrow--next {
+        right: -40px !important;
+    }
+
+    .CarouselCard {
+        width: 280px !important;
+    }
+    
+    .CarouselCardImg {
+        width: 280px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .CarouselCardsTitleColoured {
+        font-size: 28px;
+    }
+    
+    .CarouselVehicleName,
+    .price {
+        font-size: 16px;
+    }
+    
+    .CarouselVehicleType {
+        font-size: 14px;
+    }
+    
+    .CarouselCardImg {
+        width: 200px;
+        height: 140px;
+    }
+    
+    .CarouselCard {
+        padding: 10px 15px;
+    }
+}

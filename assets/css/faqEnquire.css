@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.faqEnquireContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    margin-bottom: 24px;
+}
+
+.faqEnquireWrapper{
+    width: 90%;
+    display: flex;
+    gap: 10%;
+}
+
+.faqContainer{
+    width: 40%;
+}
+
+.FAQsTitle{
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.faqWrapper{
+    background: #E8E8E8;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 23px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.faqWrapper:hover {
+    background: #e0e0e0;
+}
+
+.questionDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question{
+    font-size: 16px;
+    font-weight: 500;
+    color: #555555;
+    transition: color 0.3s ease;
+}
+
+.questionOpened{
+    font-size: 16px;
+    font-weight: 500;
+    color: #3170B6;
+    transition: color 0.3s ease;
+}
+
+.minus, .plus{
+    font-size: 30px;
+    font-weight: 600;
+    color: #555555;
+    transition: all 0.3s ease;
+}
+
+
+.answer{
+    color: #585858;
+    margin-top: 0;
+    transition: all 0.3s ease-out;
+    overflow: hidden;
+}
+
+
+
+
+
+.enquireContainer{
+    width: 50%;
+}
+
+
+.ColouredText{
+    color: #DA2725;
+    
+}
+
+.enquireParra{
+font-size: 16px;
+font-weight: 400;
+margin-top: -35px;
+color: #595959;
+margin-bottom: 35px;
+}
+
+.InputDiv{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.inputBox{
+    width: 70%;
+    border: 1px solid #B8B8B8;
+    border-radius: 12px;
+    padding: 0 20px;
+    height: 50px;
+    font-size: 16px;
+}
+.inputText{
+    font-size: 16px;
+    font-weight: 400;
+    color: #595959;   
+}
+.colouredInputText{
+    color: #DA2725;
+
+}
+
+.submitBtnDiv{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.submitText{
+font-size: 15px;
+font-weight: 400;
+color: #595959;
+width: 70%;
+}
+
+.colouredSubmitText{
+font-size: 15px;
+font-weight: 700;
+text-decoration-line: underline;
+color: #0D039D;
+}
+
+.submitBtn{
+    background: #DA2725;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 45px;
+}
+
+.mandatoryText{
+font-size: 14px;
+font-weight: 400;
+color: #595959;
+margin-top: 7px;
+
+
+}
