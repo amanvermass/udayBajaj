@@ -118,6 +118,7 @@ body {
     font-size: 20px;
     font-weight: 500;
     line-height: 20px;
+    text-wrap: nowrap;
 }
 
 .price {
