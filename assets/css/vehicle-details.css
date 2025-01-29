@@ -472,6 +472,7 @@
 .vehicleLocation {
     cursor: pointer;
     transition: color 0.3s ease;
+    text-wrap: nowrap;
 }
 
 .vehicleLocation:hover {
@@ -481,6 +482,7 @@
 .vehicleLocationSelected {
     color: #DA2725;
     cursor: pointer;
+    text-wrap: nowrap;
 }
 
 .vehicleLocationDiv {
@@ -549,6 +551,8 @@
     .vehicleRightContainer{
         width: 38%;
     }
+
+    
 }
 
 @media (max-width: 850px) {
@@ -565,6 +569,12 @@
     }
     .vehicleHighlightsTitle{
         margin-top: 20px;
+    }
+
+    .vehicleLeftContainer {
+        .vehicleDetailImageContainer {
+            padding: 10px;
+        }
     }
 
     
@@ -588,6 +598,11 @@
 
     .vehicleDetailEngineWrapper{
         padding: 10px 10px;
+    }
+
+    .vehicleLocationDiv{
+        gap: 0;
+        justify-content: space-between;
     }
     
 }
