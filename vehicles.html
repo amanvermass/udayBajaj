@@ -6,7 +6,7 @@
     <title>Vehicles</title>
 
     <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/vehicle.css">
+    <link rel="stylesheet" href="./assets/css/vehicles.css">
     <link rel="stylesheet" href="./assets/css/faqEnquire.css">
     <link rel="stylesheet" href="./assets/css/index.css">
 
@@ -18,6 +18,9 @@
  
          <!-- Font Awesome 6 CDN -->
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         <!-- Splide.js CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
  
 </head>
 <body>
@@ -63,9 +66,9 @@
 
 
         <div class="NavigationDivDesktop">
-                <div class="SelectedNavigationLink"> <a href="index.html">Home</a></div>
+                <div class="NavigationLink"> <a href="index.html">Home</a></div>
                 <div class="NavigationLink">About</div>
-                <div class="NavigationLink">Vehicles</div>
+                <div class="SelectedNavigationLink">Vehicles</div>
                 <div class="NavigationLink">Our Stores</div>
                 <div class="NavigationLink hasDropdown">
                     Our Services 
@@ -96,7 +99,7 @@
                 <img src="/assets/icons/close.png" alt="close" class="closeIcon">
             </div>
             <div class="MobileMenuContent">
-                <div class="MobileMenuItem">Home</div>
+                <div class="MobileMenuItem"> <a href="index.html">Home</a></div>
                 <div class="MobileMenuItem">About</div>
                 <div class="MobileMenuItem">Vehicles</div>
                 <div class="MobileMenuItem">Our Stores</div>
@@ -136,21 +139,25 @@
     </div>
     <div class="brandsDiv">
         <div class="brand_name">Brands</div>
-        <div class="brandLogo">
-            <div class="vehicleBrandLogo">
-                <img src="./assets/img/bajaj.png" class="brandImage">
-            </div>
-            <div class="vehicleBrandLogo">
-                <img src="./assets/img/ktm.png" class="brandImage">
-            </div>
-            <div class="vehicleBrandLogo">
-                <img src="./assets/img/chetak.png" class="brandImage">
-            </div>
-            <div class="vehicleBrandLogo">
-                <img src="./assets/img/triumph.png" class="brandImage">
-            </div>
-            <div class="vehicleBrandLogo">
-                <img src="./assets/img/bajajcom.png" class="brandImage">
+        <div class="brandContainer splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide vehicleBrandLogo">
+                        <img src="./assets/img/bajaj.png" class="brandImage">
+                    </li>
+                    <li class="splide__slide vehicleBrandLogo">
+                        <img src="./assets/img/ktm.png" class="brandImage">
+                    </li>
+                    <li class="splide__slide vehicleBrandLogo">
+                        <img src="./assets/img/chetak.png" class="brandImage">
+                    </li>
+                    <li class="splide__slide vehicleBrandLogo">
+                        <img src="./assets/img/triumph.png" class="brandImage">
+                    </li>
+                    <li class="splide__slide vehicleBrandLogo">
+                        <img src="./assets/img/bajajcom.png" class="brandImage">
+                    </li>
+                </ul>
             </div>
         </div>
 
@@ -164,7 +171,7 @@
             <div class="VehicleType">
                 Vehicle Type</div>
             <select id="vehicle" name="vehicle" class="vehicleSelector">
-                <option value="" disabled selected class="selectType">Select Type</option>
+                <option value="showall" selected class="selectType">Show all</option>
                 <option value="2-wheelers" class="vehicleName">Two Wheelers</option>
                 <option value="3-wheelers" class="vehicleName">Three Wheelers</option>
                 <option value="4-wheelers" class="vehicleName">Four Wheelers</option>
@@ -179,7 +186,8 @@
 
 <!-- --------------------Two Wheeler Selection Start Here---------------- -->
 
-<div class="vehicaleBikeHeader"> 
+<section class="TwoWheelerSection">
+<div class="vehicleBikeHeader"> 
     <div class="vehicleBikeDiv">
        <div class="twoWheelerSection">Two <span class="vehicleTypeName"> Wheelers</span> </div>
         <div class="ViewAll">View All</div>
@@ -211,7 +219,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo">
                         35km
                     </div>
                 </div>
@@ -238,7 +246,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/plug.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/plug.svg" alt="Mileage" class="vehicleLogo">
                         110km
                     </div>
                 </div>
@@ -265,7 +273,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo">
                         35km
                     </div>
                 </div>
@@ -292,7 +300,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo">
                         45km
                     </div>
                 </div>
@@ -319,7 +327,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo">
                         45km
                     </div>
                 </div>
@@ -346,7 +354,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo">
                         45km
                     </div>
                 </div>
@@ -355,13 +363,17 @@
     </div>
 </div>
 
+</section>
+
 
 <!-- --------------------Two Wheeler Selection End Here---------------- -->
 
 
 <!-- --------------------Three Wheeler Selection Start Here---------------- -->
 
-<div class="vehicaleBikeHeader"> 
+
+<section class="ThreeWheelerSection">
+<div class="vehicleBikeHeader"> 
     <div class="vehicleBikeDiv">
        <div class="twoWheelerSection">Three <span class="vehicleTypeName"> Wheelers</span> </div>
         <div class="ViewAll">View All</div>
@@ -393,7 +405,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo">
                         35km
                     </div>
                 </div>
@@ -420,7 +432,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/plug.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/plug.svg" alt="Mileage" class="vehicleLogo">
                         110km
                     </div>
                 </div>
@@ -447,7 +459,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo">
                         35km
                     </div>
                 </div>
@@ -456,20 +468,20 @@
         
     </div>
 </div>
+</section>
 
 
 <!-- --------------------Three Wheeler Selection End Here---------------- -->
 
 
 <!-- --------------------Four Wheeler Selection Start Here---------------- -->
-
-<div class="vehicaleBikeHeader"> 
+<section class="FourWheelerSection">
+<div class="vehicleBikeHeader"> 
     <div class="vehicleBikeDiv">
        <div class="twoWheelerSection">Four <span class="vehicleTypeName"> Wheelers</span> </div>
         <div class="ViewAll">View All</div>
     </div>
 </div>
-
 
 
 <div class="Four_wheelers_section">
@@ -495,7 +507,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/milage.svg" alt="Mileage" class="vehicleLogo">
                         35km
                     </div>
                 </div>
@@ -522,7 +534,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/plug.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/plug.svg" alt="Mileage" class="vehicleLogo">
                         110km
                     </div>
                 </div>
@@ -549,7 +561,7 @@
                     </div>
                     <div class="bike_line"></div>
                     <div class="detail">
-                        <img src="./assets/img/icon/plug.svg" alt="Mileage" class="logo">
+                        <img src="./assets/img/icon/plug.svg" alt="Mileage" class="vehicleLogo">
                         110km
                     </div>
                 </div>
@@ -558,6 +570,10 @@
         
     </div>
 </div>
+
+</section>
+
+
 
 <div class="Line-div">
     <div class="Line"></div>
@@ -672,12 +688,6 @@
             <div class="mandatoryText">“<span class="colouredInputText">*</span>” Mark fields are mandatory</div>
 
 
-
-
-
-
-
-
         </div>
 
 
@@ -776,7 +786,7 @@
     <div class="footer_kvt">
     <div class="footer_first"> 2025 Copyright Uday Autosales Pvt. Ltd. All Rights Reserved</div>
     <div class="footer_first">Website powered by
-        <span class="footer_last_kvt"> KVT Media</span></div>
+        <span class="footer_last_kvt"><a target="_blank" href="https://www.kvtmedia.com/"> KVT Media</a></span></div>
     </div>
 </div>
 <!-- Footer Section End Here-->
@@ -789,6 +799,7 @@
         <script src="./assets/js/custom/faqEnquire.js"></script>
         <script src="./assets/js/custom/header.js"></script>
         <script src="./assets/js/custom/slider.js"></script>
+        <script src="./assets/js/custom/vehicles.js"></script>
     
 </body>
 </html>

@@ -139,7 +139,7 @@
 
 <div class="thirdPageSelectDiv">
     <div class="thirdPageWrapper">
-        <div class="homeVehicleSelector" ><a href="index.html">  Home </a><span class="vehicleArrow">> Vehicles></span> <span class="thirdPageWheeler">Two Wheelers </span></div>
+        <div class="homeVehicleSelector" ><a href="index.html">  Home </a><span class="vehicleArrow"> > Vehicles ></span> <span class="thirdPageWheeler">Two Wheelers </span></div>
        
     </div>
 </div>
@@ -150,29 +150,69 @@
 
 
 
-<div class="vehicaleBikeHeader"> 
+<div class="vehicaleBikeHeader">
     <div class="vehicleBikeDiv">
-       <div class="twoWheelerSection">Two <span class="vehicleTypeName"> Wheelers</span> </div>
-       <div class="selectTwoWheelerDiv">
-        <select id="vehicle" name="vehicle" class="selectBikeType">
-            <option value="" disabled selected class="selectModel">Bajaj</option>
-            <option value="2-wheelers" class="modelsAndvehicles">Two Wheelers</option>
-        </select>
-        <select id="vehicle" name="vehicle" class="selectBikeType">
-            <option value="" disabled selected class="selectModel">Select Model</option>
-            <option value="2-wheelers" class="modelsAndvehicles">Two Wheelers</option>
-            <option value="3-wheelers" class="modelsAndvehicles">Three Wheelers</option>
-            <option value="4-wheelers" class="modelsAndvehicles">Four Wheelers</option>
-        </select>
-        <select id="vehicle" name="vehicle" class="selectBikeType">
-            <option value="" disabled selected class="selectModel">Petrol</option>
-            <option value="2-wheelers" class="modelsAndvehicles">Two Wheelers</option>
-        </select>
-        <div class="ResetAll">Reset All</div>
-    </div>
-    </div>
-</div>
+        <div class="twoWheelerSection">Two <span class="vehicleTypeName"> Wheelers</span> </div>
+        <div class="selectTwoWheelerDiv">
+            <select id="vehicle" name="vehicle" class="selectBikeType">
+                <option value="" selected class="selectModel">Bajaj</option>
+                <option value="2-wheelers" class="modelsAndvehicles">Two Wheelers</option>
+            </select>
+            <select id="vehicle" name="vehicle" class="selectBikeType">
+                <option value="" selected class="selectModel">Select Model</option>
+                <option value="2-wheelers" class="modelsAndvehicles">Two Wheelers</option>
+                <option value="3-wheelers" class="modelsAndvehicles">Three Wheelers</option>
+                <option value="4-wheelers" class="modelsAndvehicles">Four Wheelers</option>
+            </select>
+            <select id="vehicle" name="vehicle" class="selectBikeType">
+                <option value="" selected class="selectModel">Petrol</option>
+                <option value="2-wheelers" class="modelsAndvehicles">Two Wheelers</option>
+            </select>
+            <button class="ResetAll">Reset All</button>
 
+
+        </div>
+
+        <div class="filterIconDiv">
+            <img src='./assets/icons/filter.png' alt='filter' class="filterIcon" />
+        </div>
+    </div>
+    
+
+    
+    <div id="filterDiv" class="filterDiv">
+        <div class="filterContent">
+<img src='./assets/icons/close.png' alt='close' class="closeIconMobile" id="closeBtn"/>
+
+            <h2 class="filterTitleMobile">Search Vehicles</h2>
+
+            <div class="filterLine"></div>
+            <select id="vehicle" name="vehicle" class="selectBikeTypeMobile">
+                <option value="" selected class="selectModel">Bajaj</option>
+                <option value="2-wheelers" class="modelsAndvehicles">Two Wheelers</option>
+            </select>
+            <select id="vehicle" name="vehicle" class="selectBikeTypeMobile">
+                <option value="" selected class="selectModel">Select Model</option>
+                <option value="2-wheelers" class="modelsAndvehicles">Two Wheelers</option>
+                <option value="3-wheelers" class="modelsAndvehicles">Three Wheelers</option>
+                <option value="4-wheelers" class="modelsAndvehicles">Four Wheelers</option>
+            </select>
+            <select id="vehicle" name="vehicle" class="selectBikeTypeMobile">
+                <option value="" selected class="selectModel">Petrol</option>
+                <option value="2-wheelers" class="modelsAndvehicles">Two Wheelers</option>
+            </select>
+
+            <div class="ResetAllApplyDiv">
+                <button class="ResetAllMobile">Reset All</button>
+                <button id="applyBtn">Apply</button>
+            </div>
+            
+        </div>
+    </div>
+
+
+    
+</div>
 
 
 <div class="Line_div">
@@ -981,6 +1021,7 @@
         <script src="assets/js/index.js"></script>
         <script src="./assets/js/custom/faqEnquire.js"></script>
         <script src="./assets/js/custom/header.js"></script>
+        <script src="./assets/js/custom/twoWheeler.js"></script>
     
 </body>
 </html>

@@ -97,11 +97,12 @@ body {
     padding: 14px 28px;
     border-radius: 12px;
     background: #fff;
-    width: 303px !important;
+    width: 359px !important;
+    overflow: hidden;
 }
 
 .CarouselCardImg {
-    width: 303px;
+    width: 359px;
     height: 217px;
     object-fit: contain;
 }

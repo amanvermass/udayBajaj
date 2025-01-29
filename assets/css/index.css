@@ -1,9 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
 .homeImage{
     width: 100%;
 }
 
 a{
     text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: inherit;
 }
 
 .BrandsContainer{
